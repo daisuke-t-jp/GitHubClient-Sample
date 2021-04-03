@@ -44,7 +44,7 @@ When you execute the command, you will be asked for GitHub access token.  And yo
  ```
  
  
-### 4. 実行
+### 4. Run
  
 Open `GitHubClient-Sample.xcworkspace` and run.
 

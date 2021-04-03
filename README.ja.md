@@ -15,12 +15,12 @@
 
 ## セットアップ方法
 
-### 1. GitHub API のアクセストークンを用意します。
+### 1. GitHub API のアクセストークンを用意
 
 https://docs.github.com/ja/rest/guides/getting-started-with-the-rest-api#authentication
 
 
-### 2. mac に CocoaPods-keys をインストールします。
+### 2. mac に CocoaPods-keys をインストール
 
 プロジェクトにアクセストークンを設定するために [CocoaPods-keys](https://github.com/orta/cocoapods-keys) をインストールします。
 
