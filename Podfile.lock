@@ -1,0 +1,35 @@
+PODS:
+  - ImageViewer.swift (3.3.3)
+  - Keys (1.0.1)
+  - Kingfisher (6.2.1)
+  - SwiftLint (0.43.1)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - ImageViewer.swift (~> 3.0)
+  - Keys (from `Pods/CocoaPodsKeys`)
+  - Kingfisher (~> 6.0)
+  - SwiftLint
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - ImageViewer.swift
+    - Kingfisher
+    - SwiftLint
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  Keys:
+    :path: Pods/CocoaPodsKeys
+
+SPEC CHECKSUMS:
+  ImageViewer.swift: 3dbb74a68ac4bdd6cdd585b3128dae17ccd733e5
+  Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
+  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 24ba73e843d33f3fbe3537b3d920dc80ea775b04
+
+COCOAPODS: 1.10.1
