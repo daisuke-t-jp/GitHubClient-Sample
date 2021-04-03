@@ -33,7 +33,7 @@ extension APIRequestable {
         request.addValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         request.addValue("application/vnd.github.v3+json", forHTTPHeaderField: "Accept")
         
-        let token = GitHubClientKeys().gitHubPersonalAccessToken
+        let token = GitHubClientSampleKeys().gitHubPersonalAccessToken
         if !token.isEmpty {
             request.addValue("token \(token)", forHTTPHeaderField: "Authorization")
         }
