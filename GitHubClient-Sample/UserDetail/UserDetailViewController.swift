@@ -112,6 +112,7 @@ private extension UserDetailViewController {
             return
         }
         
+        headerView.viewController = self
         
         headerView.avatarImageView.layer.cornerRadius = headerView.avatarImageView.frame.width / 2
         headerView.avatarImageView.clipsToBounds = true
@@ -131,6 +132,7 @@ private extension UserDetailViewController {
         headerView.nameLabel.text = usersResponse.name ?? ""
         headerView.followLabel.text = "\(usersResponse.followers) followers · \(usersResponse.following) following"
 
+        headerView.htmlURL = usersResponse.html_url
     }
     
 }

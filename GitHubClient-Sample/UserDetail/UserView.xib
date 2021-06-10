@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserView" customModule="GitHub_Client" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserView" customModule="GitHubClient_Sample" customModuleProvider="target">
             <connections>
                 <outlet property="avatarImageView" destination="DEw-gW-RJv" id="EQd-Dn-Mlp"/>
                 <outlet property="followLabel" destination="TKk-me-X1X" id="cTE-BH-j8i"/>
@@ -59,6 +59,16 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM8-zQ-vLM">
+                    <rect key="frame" x="157" y="256" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Qvz-7A-IQu"/>
+                    </constraints>
+                    <state key="normal" title="Profile"/>
+                    <connections>
+                        <action selector="actionProfileButton:" destination="-1" eventType="touchUpInside" id="WDM-vx-Q2I"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,9 +77,11 @@
                 <constraint firstItem="TKk-me-X1X" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5M5-Ne-QRq"/>
                 <constraint firstItem="TKk-me-X1X" firstAttribute="top" secondItem="AR4-3I-ouL" secondAttribute="bottom" constant="5" id="H6o-Cf-tea"/>
                 <constraint firstItem="DEw-gW-RJv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="K6P-KO-Dto"/>
+                <constraint firstItem="bM8-zQ-vLM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="U3v-Fy-jB8"/>
                 <constraint firstItem="C8b-bK-UTh" firstAttribute="top" secondItem="DEw-gW-RJv" secondAttribute="bottom" constant="5" id="Vdm-ZO-WMt"/>
                 <constraint firstItem="C8b-bK-UTh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hbW-5b-JqV"/>
                 <constraint firstItem="DEw-gW-RJv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mqf-xb-fOd"/>
+                <constraint firstItem="bM8-zQ-vLM" firstAttribute="top" secondItem="TKk-me-X1X" secondAttribute="bottom" constant="10" id="tZs-yq-EhH"/>
                 <constraint firstItem="AR4-3I-ouL" firstAttribute="top" secondItem="C8b-bK-UTh" secondAttribute="bottom" constant="5" id="uYP-PI-Uh2"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

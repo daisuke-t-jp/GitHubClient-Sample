@@ -11,6 +11,7 @@ struct UsersResponse: Decodable {
     var id: Int64
     var login: String
     var avatar_url: URL
+    var html_url: String
     var name: String?
     var followers: Int
     var following: Int

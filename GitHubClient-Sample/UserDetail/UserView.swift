@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class UserView: UIView {
     
@@ -14,6 +15,9 @@ class UserView: UIView {
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var followLabel: UILabel!
+    
+    var htmlURL: String?
+    weak var viewController: UIViewController?
     
     
     override init(frame: CGRect) {
@@ -42,6 +46,19 @@ class UserView: UIView {
         loginLabel.text = ""
         nameLabel.text = ""
         followLabel.text = ""
+    }
+    
+    
+    @IBAction func actionProfileButton(_ sender: Any) {
+        guard let viewController = viewController,
+              let htmlURL = htmlURL,
+              let url = URL(string: htmlURL) else {
+            return
+        }
+        
+        
+        let viewController2 = SFSafariViewController(url: url)
+        viewController.present(viewController2, animated: true, completion: nil)
     }
     
 }
